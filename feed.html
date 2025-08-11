@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyPost - Лента</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="app-body">
+
+    <!-- Desktop Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">AnyPost</a>
+            <div class="desktop-search">
+                <input type="text" class="search-input" placeholder="Поиск по тегам...">
+            </div>
+            <nav class="main-nav">
+                <a href="#" class="nav-link active" title="Лента">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5" /></svg>
+                </a>
+                <a href="#" class="nav-link" title="Поиск">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+                </a>
+                <a href="#" class="nav-link" title="Создать пост">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                </a>
+                <a href="#" class="nav-link" title="Сохраненное">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.5 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" /></svg>
+                </a>
+                <a href="#" class="nav-link" title="Профиль">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <a href="#" class="nav-link active" title="Лента">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5" /></svg>
+        </a>
+        <a href="#" class="nav-link" title="Поиск">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
+        </a>
+        <a href="#" class="nav-link" title="Создать пост">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+        </a>
+        <a href="#" class="nav-link" title="Сохраненное">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.5 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" /></svg>
+        </a>
+        <a href="#" class="nav-link" title="Профиль">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>
+        </a>
+    </nav>
+
+    <main class="main-content">
+        <div class="container feed-container">
+
+            <div class="feed-tabs">
+                <a href="#" class="tab-link active">Подписки</a>
+                <a href="#" class="tab-link">Интересное</a>
+            </div>
+
+            <div class="feed-wrapper">
+
+                <!-- Post Card Example 1 -->
+                <article class="post-card">
+                    <header class="post-header">
+                        <div class="post-author">
+                            <div class="author-avatar-placeholder"></div>
+                            <div class="author-info">
+                                <a href="#" class="author-name">Имя Автора</a>
+                                <span class="post-date">2 часа назад</span>
+                            </div>
+                        </div>
+                        <button class="post-options-btn" aria-label="Дополнительные действия">•••</button>
+                    </header>
+                    <div class="post-content">
+                        <p class="post-text">Это пример текстового поста в AnyPost. Минималистичный дизайн помогает сосредоточиться на содержании. Как вам такая идея?</p>
+                        <div class="post-media-placeholder">
+                            <span>Здесь может быть фото или видео</span>
+                        </div>
+                    </div>
+                    <footer class="post-footer">
+                        <div class="post-tags">
+                            <a href="#" class="tag">#дизайн</a>
+                            <a href="#" class="tag">#минимализм</a>
+                            <a href="#" class="tag">#соцсеть</a>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like">Лайк</button>
+                            <button class="action-btn save">Сохранить</button>
+                            <button class="action-btn share">Поделиться</button>
+                        </div>
+                    </footer>
+                </article>
+
+                <!-- Post Card Example 2 -->
+                <article class="post-card">
+                    <header class="post-header">
+                        <div class="post-author">
+                            <div class="author-avatar-placeholder"></div>
+                            <div class="author-info">
+                                <a href="#" class="author-name">Другой Автор</a>
+                                <span class="post-date">Вчера</span>
+                            </div>
+                        </div>
+                         <button class="post-options-btn" aria-label="Дополнительные действия">•••</button>
+                    </header>
+                    <div class="post-content">
+                        <p class="post-text">Еще один пост, чтобы показать, как выглядит лента с несколькими записями.</p>
+                    </div>
+                    <footer class="post-footer">
+                        <div class="post-tags">
+                            <a href="#" class="tag">#разработка</a>
+                        </div>
+                        <div class="post-actions">
+                            <button class="action-btn like">Лайк</button>
+                            <button class="action-btn save">Сохранить</button>
+                            <button class="action-btn share">Поделиться</button>
+                        </div>
+                    </footer>
+                </article>
+
+            </div>
+
+            <!--
+            EMPTY STATE EXAMPLE:
+            Раскомментируйте этот блок, чтобы увидеть, как выглядит пустая лента.
+
+            <div class="empty-state">
+                <div class="empty-state-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width: 64px; height: 64px; color: #ccc;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.412 15.655 9.75 21.75l3.745-4.012M9.257 13.5H3.75l2.659-2.849m2.048-2.194L14.25 2.25 12 10.5h8.25l-4.707 5.043M8.457 8.457 3 3m15.75 15.75-5.457-5.457" />
+                    </svg>
+                </div>
+                <h2>Здесь пока пусто</h2>
+                <p>Когда вы подпишетесь на авторов, их посты появятся здесь.</p>
+                <a href="#" class="btn btn-primary">Создать пост</a>
+            </div>
+            -->
+
+        </div>
+    </main>
+
+</body>
+</html>
