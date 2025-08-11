@@ -572,3 +572,387 @@ img {
         gap: 4px;
     }
 }
+
+
+/* =================================
+   Auth Page Styles
+   ================================= */
+
+.auth-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 20px;
+    padding: 40px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.auth-title {
+    font-size: 1.75rem;
+    margin-top: 16px;
+    font-weight: 700;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(56, 97, 251, 0.1);
+}
+
+.btn-block {
+    width: 100%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 1.1rem;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    font-weight: 500;
+}
+
+
+/* =================================
+   Search Page Styles
+   ================================= */
+
+.search-page-container {
+    max-width: 960px;
+}
+
+.search-bar-large {
+    margin-bottom: 50px;
+}
+
+.search-bar-large .form-control {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 1.2rem;
+}
+
+.popular-tags .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.tag-card-placeholder {
+    aspect-ratio: 16 / 9;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    color: var(--primary-text);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.tag-card-placeholder span {
+    color: var(--secondary-text);
+    font-weight: 500;
+}
+
+.tag-card-placeholder:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* =================================
+   Create Post Page Styles
+   ================================= */
+
+.create-post-container {
+    max-width: 1100px;
+}
+
+.create-post-form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.create-post-form {
+    background-color: var(--white);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.create-post-form textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.media-upload-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.preview-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--secondary-text);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.post-preview-section .post-card {
+    border-style: dashed;
+}
+
+
+/* Responsive for Create Post */
+@media (max-width: 992px) {
+    .create-post-form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .post-preview-section {
+        margin-top: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions .btn {
+        width: 100%;
+    }
+}
+
+
+/* =================================
+   Single Post Page Styles
+   ================================= */
+
+.single-post-container {
+    max-width: 720px;
+}
+
+.comments-section {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    margin-top: 24px;
+    padding: 24px 30px;
+}
+
+.comments-section .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+
+.add-comment-form {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.add-comment-form .form-control {
+    flex-grow: 1;
+    resize: vertical;
+    min-height: 48px;
+    padding: 12px 16px;
+}
+
+.add-comment-form .btn {
+    height: 48px;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.comment-item .author-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.comment-body .author-name {
+    font-size: 0.9rem;
+}
+
+.comment-body p {
+    margin-top: 2px;
+    font-size: 0.95rem;
+}
+
+.empty-state-comments {
+    text-align: center;
+    padding: 40px;
+    color: var(--secondary-text);
+}
+
+.empty-state-comments h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+
+/* =================================
+   Settings Page Styles
+   ================================= */
+
+.settings-container {
+    max-width: 720px;
+}
+
+.settings-container .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.settings-form {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 10px 30px 30px 30px;
+}
+
+.settings-section {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.settings-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.settings-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.settings-form textarea.form-control {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.form-group-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-group-toggle label {
+    margin-bottom: 0;
+}
+
+/* Toggle Switch Styles */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 28px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input:checked + .slider {
+    background-color: var(--primary-blue);
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.settings-form .form-actions {
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0;
+}
